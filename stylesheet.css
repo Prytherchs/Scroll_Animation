@@ -1,0 +1,143 @@
+* {
+    font-family: Gill Sans Extrabold, sans-serif;
+    color: #103d50;
+}
+
+#mainpage, ul, nav p, select, canvas, #scrollBar {
+    position: absolute;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #2a5e70;
+    margin: 0;
+}
+
+#newbody {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-right: 20px;
+    top: 0;
+    position: relative;
+    margin: 0;
+}
+
+#mainpage {
+    width: 50%;
+    background-color: #144859;
+    text-align: center;
+    left: 23%;
+    top: 0;
+    padding-top: 55px;
+    border: thick solid #04313c;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+article {
+    background-color: #2b7760;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 2% 3% 4% 3%;
+    border: thick solid #135d47;
+    font-size: large;
+    text-align: left;
+}
+
+nav {
+    left: calc(50% - 90%/2);
+    width: 90%;
+    border-bottom-style: solid;
+    border-color: #032025;
+    position: fixed;
+    z-index: 1;
+    background: linear-gradient(90deg, #2a5e70, #287461, #287461, #2a5e70);
+    top: 0;
+    border-radius: 0 0 40% 40%;
+    font-size: 1.2em;
+    height: 55px;
+}
+
+ul {
+    left: 45%;
+    list-style-type: none;
+}
+
+li {
+    text-align: center;
+    border: 2px solid;
+    border-radius: 8px;
+    display: inline;
+    margin: .3vw;
+    padding: .2vw;
+}
+
+nav p {
+    font-weight: bold;
+    left: 22%;
+    font-size: calc(9px + 1.7vw);
+}
+
+select {
+    left: 60%;
+    border: 2px solid;
+    border-radius: 8px;
+    display: inline;
+    background-color: transparent;
+    font-size: calc(10px + 1vw);
+    outline: none;
+}
+
+select, li {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+canvas {
+    z-index: -1;
+    background-color: transparent;
+    left: 0;
+    top: 0;
+    border: thick black;
+}
+
+#scrollBar {
+    right: .1%;
+    top: 0;
+    z-index: 3;
+    background-color: #135d47;
+    height: 50px;
+    width: 1%;
+    border: thick solid #103d50;
+    border-radius: .5vw;
+    margin: 10px;
+    box-shadow: 5px 5px 2px #04313c;
+}
+
+button {
+    background-color: #2b7760;
+    border: thick solid #135d47;
+    font-size: larger;
+    padding: 1%;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    outline: none;
+}
+
+article, button {
+    box-shadow: 6px 8px 5px #04313c;
+}
+
+
+
+button:hover {
+    background-color: #2a6e58;
+    border-color: #13543e;
+}
+
+button:active {
+    box-shadow: 3px 4px 1px #042732;
+    transform: translate(2px, 2px);
+}
